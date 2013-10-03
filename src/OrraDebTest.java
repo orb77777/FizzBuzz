@@ -28,6 +28,11 @@ public class OrraDebTest {
 		
 		assertTrue(isEqual);
 	}
+	
+	@Test
+	public void testIfZeroReturnsZero() {
+		assertEquals(orra.giveFizzBuzzNumber(0),0);
+	}
 
 		
 
