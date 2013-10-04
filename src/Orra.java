@@ -11,10 +11,15 @@ public class Orra {
 	}
 
 	public Object giveAnswer(String string) {
-		if(string.equals("ORRA"))
+		if (string == null || string.equals("") ) {
+			return "O_@_O";
+		}
+		if(string.equals("ORRA")){
 			return "DEB";
-		else
+		}
+		else{
 			return "ORRA";
+		}
 	}
 
 }

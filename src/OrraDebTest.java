@@ -44,8 +44,8 @@ public class OrraDebTest {
 	@Test
 	public void testIfNothingIsGivenReturnsDots()
 	{
-		assertEquals(orra.giveAnswer(""), "...");
-		assertEquals(orra.giveAnswer(null),"...");
+		assertEquals(orra.giveAnswer(""), "O_@_O");
+		assertEquals(orra.giveAnswer(null),"O_@_O");
 	}
 
 }
