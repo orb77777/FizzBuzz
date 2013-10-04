@@ -14,4 +14,8 @@ public class Orra {
 		return new Integer(i);
 	}
 
+	public Object giveDEB(String string) {
+		return "DEB";
+	}
+
 }
