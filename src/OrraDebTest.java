@@ -33,6 +33,11 @@ public class OrraDebTest {
 	public void testIfZeroReturnsZero() {
 		assertEquals(orra.giveFizzBuzzNumber(0),0);
 	}
+	
+	@Test
+	public void testDeb() {
+		assertEquals(orra.giveDEB("ORRA"), "DEB");
+	}
 
 		
 
