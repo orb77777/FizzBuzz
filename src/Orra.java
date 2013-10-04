@@ -11,7 +11,7 @@ public class Orra {
 	}
 
 	public Object giveFizzBuzzNumber(int i) {		
-		return new Integer(i);
+		return i == 3 ? "DEB" : new Integer(i);
 	}
 
 	public Object giveDEB(String string) {
