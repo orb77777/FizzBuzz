@@ -40,10 +40,16 @@ public class OrraDebTest {
 	}
 	
 	@Test
-	public void testIfNumberDividableByThreeGivesBackORRA() {
+	public void testIfNumberDividableByThreeGivesBackDEB() {
 		assertEquals(orra.giveFizzBuzzNumber(3),"DEB");
 	}
-
+	
+	@Test
+	public void testIfAnythingGivenButOrraReturnORRA()
+	{
+		assertEquals(orra.giveDEB("Feje"), "ORRA");
+		assertEquals(orra.giveDEB("törölközõje"),"ORRA");
+	}
 		
 
 }
