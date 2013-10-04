@@ -10,4 +10,8 @@ public class Orra {
 		return "ORRA";
 	}
 
+	public Object giveFizzBuzzNumber(int i) {		
+		return new Integer(i);
+	}
+
 }
