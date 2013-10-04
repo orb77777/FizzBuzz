@@ -10,12 +10,11 @@ public class Orra {
 		return "ORRA";
 	}
 
-	public Object giveFizzBuzzNumber(int i) {		
-		return i == 3 ? "DEB" : new Integer(i);
-	}
-
-	public Object giveDEB(String string) {
-		return "DEB";
+	public Object giveAnswer(String string) {
+		if(string.equals("ORRA"))
+			return "DEB";
+		else
+			return "ORRA";
 	}
 
 }

@@ -30,26 +30,22 @@ public class OrraDebTest {
 	}
 	
 	@Test
-	public void testIfZeroReturnsZero() {
-		assertEquals(orra.giveFizzBuzzNumber(0),0);
-	}
-	
-	@Test
 	public void testDeb() {
-		assertEquals(orra.giveDEB("ORRA"), "DEB");
-	}
-	
-	@Test
-	public void testIfNumberDividableByThreeGivesBackDEB() {
-		assertEquals(orra.giveFizzBuzzNumber(3),"DEB");
+		assertEquals(orra.giveAnswer("ORRA"), "DEB");
 	}
 	
 	@Test
 	public void testIfAnythingGivenButOrraReturnORRA()
 	{
-		assertEquals(orra.giveDEB("Feje"), "ORRA");
-		assertEquals(orra.giveDEB("törölközõje"),"ORRA");
+		assertEquals(orra.giveAnswer("Feje"), "ORRA");
+		assertEquals(orra.giveAnswer("tÃ¶rÃ¶lkÃ¶zÅ‘je"),"ORRA");
 	}
-		
+	
+	@Test
+	public void testIfNothingIsGivenReturnsDots()
+	{
+		assertEquals(orra.giveAnswer(""), "...");
+		assertEquals(orra.giveAnswer(null),"...");
+	}
 
 }
