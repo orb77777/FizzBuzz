@@ -10,11 +10,11 @@ import org.junit.Test;
 public class OrraDebTest {
 
 
-	Orra orra; 
+	Orra majró; 
 
 	@Before
 	public void setUp() throws Exception {
-		orra = new Orra();
+		majró = new Orra();
 	}
 
 	@After
@@ -24,28 +24,33 @@ public class OrraDebTest {
 	@Test
 	public void testOrra() {
 		String testWord = "ORRA";
-		Boolean isEqual = testWord.equals(orra.Oorra());
+		Boolean isEqual = testWord.equals(majró.Oorra());
 		
 		assertTrue(isEqual);
 	}
 	
 	@Test
 	public void testDeb() {
-		assertEquals(orra.giveAnswer("ORRA"), "DEB");
+		assertEquals(majró.giveAnswer("ORRA"), "DEB");
 	}
 	
 	@Test
 	public void testIfAnythingGivenButOrraReturnORRA()
 	{
-		assertEquals(orra.giveAnswer("Feje"), "ORRA");
-		assertEquals(orra.giveAnswer("törölközője"),"ORRA");
+		assertEquals(majró.giveAnswer("Feje"), "ORRA");
+		assertEquals(majró.giveAnswer("törölközője"),"ORRA");
 	}
 	
 	@Test
 	public void testIfNothingIsGivenReturnsDots()
 	{
-		assertEquals(orra.giveAnswer(""), "O_@_O");
-		assertEquals(orra.giveAnswer(null),"O_@_O");
+		assertEquals(majró.giveAnswer(""), "O_@_O");
+		assertEquals(majró.giveAnswer(null),"O_@_O");
+	}
+	
+	@Test
+	public void testCactusNeedsSpecialAttention() {
+		assertEquals(majró.giveAnswer("Kaktusz"),"PFFFFFFF!!!!!");
 	}
 
 }
