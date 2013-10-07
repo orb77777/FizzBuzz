@@ -17,6 +17,9 @@ public class Orra {
 		if(string.equals("ORRA")){
 			return "DEB";
 		}
+		if (string.equals("Kaktusz")) {
+			return "PFFFFFFF!!!!!";
+		}
 		else{
 			return "ORRA";
 		}
