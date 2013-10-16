@@ -62,4 +62,16 @@ public class StringCalculatorTest {
 		assertEquals(new Integer(0), calc.sum("//#\n"));
 		assertEquals(new Integer(56), calc.sum("//#\n50#6"));
 	}
+	
+	@Test
+	public void shouldWorkWithMultiCharDelimiters() {
+		calc = new StringCalculator();
+		assertEquals(new Integer(32), calc.sum("//[#@]\n20#@1#@1#@10"));
+	}
+	
+	@Ignore
+	@Test
+	public void shouldWorkWithMultipleMultiCharOrSingleCharDelimiter() {
+		
+	}
 }
